@@ -70,4 +70,5 @@ backBtn.addEventListener('click', () => {
 nextBtn.addEventListener('click', () => {
   alert('All credentials look correct! Proceeding...');
   // You can redirect to another page here
+   window.location.href = "home.html";
 });
