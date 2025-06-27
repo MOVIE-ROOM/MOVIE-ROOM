@@ -1,0 +1,11 @@
+ /* Example usage:
+  // openVideoPlayer('https://vidsrc.to/embed/movie/12345', 'Example Movie', 'https://download.com/movie12345.mp4');
+  // Supported Vidsrc API:
+  // - embed/movie/{id}
+  // - embed/tv/%7bid%7d.html
+  // - embed/tv/{id}/{season}
+  // - embed/tv/{id}/{season}/{episode}
+  // - vapi/movie/{type}/{page}
+  // - vapi/tv/{type}/{page}
+  // - vapi/episode/latest/{page}
+  */

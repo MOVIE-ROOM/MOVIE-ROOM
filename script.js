@@ -22,7 +22,7 @@ priceCards.forEach(card => {
       loadingScreen.style.display = 'flex';
       setTimeout(() => {
         loadingScreen.style.display = 'none';
-        window.location.href = 'home.html';
+        window.location.href = 'sign in.html';
       }, 2000);
     } else {
       alert(`Selected ${card.dataset.plan} plan!`);

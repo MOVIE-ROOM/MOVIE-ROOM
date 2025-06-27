@@ -1,20 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="video.css">
-  <title>VIDEO PLAYER</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Watch</title>
+  <link rel="stylesheet" href="video.css" />
 </head>
 <body>
-   <!-- Video Modal -->
- <div id="videoModal" class="video-modal">
-  <div class="video-container">
-    <span id="closeModal" class="close-button">&times;</span>
-    <video id="videoPlayer" controls autoplay>
-      <source id="videoSource" src="" type="video/mp4">
-    </video>
+
+  <!-- Video Modal (Always visible here) -->
+  <div class="video-modal" style="display: flex;">
+    <div class="video-container">
+      <span id="closeModal" class="close-button">&times;</span>
+      <video id="videoPlayer" controls autoplay>
+        <source id="videoSource" src="" type="video/mp4">
+        <track kind="captions" label="English" srclang="en" src="https://domain.com/file1.vtt" default>
+        <track kind="captions" label="French" srclang="fr" src="https://domain.com/file3.vtt">
+      </video>
+
+      <div class="controls">
+        <button id="downloadButton">⬇️ Download</button>
+      </div>
+    </div>
   </div>
-</div>
+
+  <script src="video.js"></script>
+  <script src="nam"></script>
 </body>
 </html>

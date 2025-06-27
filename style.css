@@ -7,6 +7,7 @@
 }
 
 body {
+  transition: 0.3s;
   width: 100%;
   height: 100vh;
   font-family: 'Poppins', sans-serif;
@@ -17,6 +18,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-color: black;
 }
 
 .container {
@@ -24,7 +26,7 @@ body {
   padding: 40px;
   border-radius: 15px;
   max-width: 500px;
-  color: #fff;
+  color: #ffffff;
   text-align: center;
 }
 
@@ -40,6 +42,7 @@ input[type="email"] {
 
 input[type="email"]::placeholder {
   color: #ccc;
+  background: transparent;
 }
 
 .email-button {
@@ -51,7 +54,7 @@ input[type="email"]::placeholder {
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: background 0.2s ease;
   margin-bottom: 15px;
 }
 
@@ -71,15 +74,15 @@ input[type="email"]::placeholder {
   border-radius: 10px;
   padding: 20px;
   cursor: pointer;
-  transition: border 0.3s ease;
+  transition: border 0.2s ease;
 }
 
 .price-card:hover {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(256, 256, 256, 0.3);
 }
 
 .price-card.selected {
-  border: 2px solid lime;
+  border: 2px solid rgb(245, 0, 0);
 }
 
 /* Overlay for loading or confirmation */
@@ -89,7 +92,8 @@ input[type="email"]::placeholder {
   top: 0; left: 0;
   width: 100%; height: 100%;
   background: rgba(0, 0, 0, 0.9);
-  color: #fff;
+  filter: blur(50%);
+  color: #ffffff;
   font-size: 2rem;
   display: none;
   justify-content: center;

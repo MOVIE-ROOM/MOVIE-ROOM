@@ -47,9 +47,9 @@ window.addEventListener('DOMContentLoaded', () => {
 
     createUserWithEmailAndPassword(auth, email, password)
       .then(() => {
-        alert('Account created successfully! Redirecting to home page...');
+        alert('Account created successfully!...');
         localStorage.setItem('userEmail', email); // Save email for future
-        window.location.href = "Home.html";
+        window.location.href = "profile.html";
       })
       .catch((error) => {
         alert(`Error: ${error.message}`);

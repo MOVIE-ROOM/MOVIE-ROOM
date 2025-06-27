@@ -16,6 +16,7 @@ body {
   background-image: url('https://www.whats-on-netflix.com/wp-content/uploads/2021/08/netflix-library-photo-1280x720.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: rgba(0, 0, 0, 0.82);
 }
 
 .login-container {
