@@ -122,6 +122,19 @@ function displayMovies(movies, container) {
   });
 }
 
+const options = {
+  method: 'GET',
+  headers: {
+    accept: 'application/json',
+    Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI4NzQ5MzVlMjRkOGIyYTNkM2ViYTJmMDFiZDg4OWQzMSIsIm5iZiI6MTc1ODI0MTA2Ni4xNjcsInN1YiI6IjY4Y2NhMTJhOTkxMzUwNzBhY2NmNDllYSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.h5ic_kT5OTYqAGETCPUeJRnEv5c3ifXqab4qZgoBcCQ'
+  }
+};
+
+fetch('https://api.themoviedb.org/3/account/22321411', options)
+  .then(res => res.json())
+  .then(res => console.log(res))
+  .catch(err => console.error(err));
+
 // Search movies
 async function searchMovies(query) {
   const res = await fetch(`${BASE_URL}/search/movie?api_key=${API_KEY}&query=${query}`);
